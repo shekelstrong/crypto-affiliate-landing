@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Блог о криптовалюте · Гайды, обзоры, сравнения · CryptoAffiliate.hub</title>
+  <meta name="description" content="Экспертные статьи о криптовалюте: как покупать в РФ, сравнение бирж, KYC, партнёрки. Актуально на 2026 год.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://crypto-affiliate.vercel.app/articles/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Блог о криптовалюте 2026">
+  <meta property="og:description" content="Гайды, обзоры, сравнения криптобирж. Актуальная информация для русскоязычной аудитории.">
+  <meta property="og:url" content="https://crypto-affiliate.vercel.app/articles/">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "CryptoAffiliate.hub Blog",
+    "url": "https://crypto-affiliate.vercel.app/articles/",
+    "description": "Экспертные статьи о криптовалюте, обзоры бирж и гайды для трейдеров",
+    "publisher": {
+      "@type": "Organization",
+      "name": "CryptoAffiliate.hub",
+      "logo": {"@type": "ImageObject", "url": "https://crypto-affiliate.vercel.app/assets/logo.svg"}
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://crypto-affiliate.vercel.app/"},
+      {"@type": "ListItem", "position": 2, "name": "Блог", "item": "https://crypto-affiliate.vercel.app/articles/"}
+    ]
+  }
+  </script>
+
+  <link rel="alternate" type="application/rss+xml" title="CryptoAffiliate.hub Blog" href="/articles/rss.xml">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/src/styles.css">
+  <style>
+    .blog-hero { padding: 80px 0 48px; text-align: center; }
+    .blog-hero h1 { font-size: clamp(32px, 5vw, 48px); font-weight: 800; color: #fff; margin: 0 0 16px; letter-spacing: -0.02em; line-height: 1.1; }
+    .blog-hero p { font-size: 18px; color: var(--text-dim); max-width: 640px; margin: 0 auto; }
+    .filter-bar { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; padding: 24px 0; border-bottom: 1px solid var(--border); margin-bottom: 48px; }
+    .filter-btn { padding: 8px 16px; background: var(--bg-elev); border: 1px solid var(--border-2); border-radius: 999px; font-size: 13px; color: var(--text-dim); cursor: pointer; transition: all .15s; }
+    .filter-btn:hover { color: #fff; border-color: var(--border-2); }
+    .filter-btn.active { background: var(--mint); color: #0a0a0a; border-color: var(--mint); font-weight: 600; }
+    .blog-grid { padding: 0 0 96px; }
+    .blog-grid .articles-grid { grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); }
+    .breadcrumb { padding: 20px 0; font-size: 13px; color: var(--text-mute); }
+    .breadcrumb a { color: var(--text-dim); }
+    .breadcrumb a:hover { color: var(--mint); }
+  </style>
+</head>
+<body>
+  <div class="ticker"><div class="ticker__track" id="tickerTrack"></div></div>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="/" class="logo">
+        <span class="logo__mark">₿</span>
+        <span class="logo__text">CryptoAffiliate<small>.hub</small></span>
+      </a>
+      <nav class="nav">
+        <a href="/#exchanges">Биржи</a>
+        <a href="/#calculator">Калькулятор</a>
+        <a href="/#how">Как начать</a>
+        <a href="/#faq">FAQ</a>
+        <a href="/articles/" style="color:#fff">Блог</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="blog-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="/">Главная</a> → <span>Блог</span></div>
+      <h1>Блог о <span class="grad">криптовалюте</span></h1>
+      <p>Экспертные гайды, обзоры бирж и стратегии заработка. Актуально на 2026 год. Без воды и рекламной шелухи.</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">Все</button>
+      <button class="filter-btn" data-filter="guide">Гайды</button>
+      <button class="filter-btn" data-filter="review">Обзоры</button>
+      <button class="filter-btn" data-filter="compare">Сравнения</button>
+      <button class="filter-btn" data-filter="earn">Заработок</button>
+      <button class="filter-btn" data-filter="security">Безопасность</button>
+    </div>
+  </div>
+
+  <section class="blog-grid">
+    <div class="container">
+      <div class="articles-grid" id="blogGrid"></div>
+    </div>
+  </section>
+
+  <section class="disclaimer">
+    <div class="container">
+      <div class="disclaimer__inner">
+        <h3>Дисклеймер</h3>
+        <p>Материалы блога носят информационный характер и не являются финансовой рекомендацией. Торговля криптовалютой сопряжена с риском потери средств. 18+. Все условия и комиссии актуальны на дату публикации.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col">
+        <a href="/" class="logo">
+          <span class="logo__mark">₿</span>
+          <span class="logo__text">CryptoAffiliate<small>.hub</small></span>
+        </a>
+        <p>Сравнение криптобирж и гайды для русскоязычной аудитории. С 2020 года.</p>
+        <div class="footer__socials">
+          <a href="https://t.me/shekelstrong" rel="nofollow noopener" aria-label="Telegram">TG</a>
+          <a href="/articles/rss.xml" aria-label="RSS">RSS</a>
+        </div>
+      </div>
+      <div class="footer__col"><h4>Биржи</h4><a href="/#bybit">Bybit</a><a href="/#okx">OKX</a><a href="/#binance">Binance</a><a href="/#htx">HTX</a><a href="/#mexc">MEXC</a><a href="/#bitget">Bitget</a><a href="/#kucoin">KuCoin</a></div>
+      <div class="footer__col"><h4>Гайды</h4><a href="/articles/">Все статьи</a><a href="/articles/kak-pokupat-kriptovalyutu-rossiya-2026.html">Купить крипту в РФ</a><a href="/articles/bybit-okx-binance-sravnenie-2026.html">Bybit vs OKX vs Binance</a><a href="/articles/zarabotok-na-partnyorkah-kriptobirzh.html">Партнёрки криптобирж</a></div>
+      <div class="footer__col"><h4>Контакты</h4><a href="https://t.me/shekelstrong">Telegram</a><a href="mailto:partner@crypto-affiliate.vercel.app">Email</a><a href="/articles/sitemap.xml">Sitemap</a></div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© 2020–2026 CryptoAffiliate.hub · Все права защищены</span>
+      <span>18+ · Не является финансовой рекомендацией</span>
+    </div>
+  </footer>
+
+  <script src="/src/data.js"></script>
+  <script src="/src/main.js"></script>
+  <script>
+    // Override articles list with extended blog articles
+    (function() {
+      const blogArticles = [
+        ...window.DATA.articles,
+        { tag: 'Сравнение', title: 'Bybit vs OKX vs Binance: что выбрать в 2026', desc: 'Подробное сравнение трёх топовых бирж: комиссии, ликвидность, фьючерсы, KYC, вывод в РФ.', url: '/articles/bybit-okx-binance-sravnenie-2026.html', date: '24 июня 2026', read: '12 мин' },
+        { tag: 'Гайд', title: 'Как купить криптовалюту в России в 2026 году', desc: 'Пошаговая инструкция: от выбора биржи до безопасного хранения. P2P, СБП, OTC.', url: '/articles/kak-pokupat-kriptovalyutu-rossiya-2026.html', date: '22 июня 2026', read: '10 мин' },
+        { tag: 'Заработок', title: 'Партнёрки криптобирж: реальный доход $5 000/мес', desc: 'Как построить воронку, какие биржи платят больше всего, SEO и Telegram-каналы.', url: '/articles/zarabotok-na-partnyorkah-kriptobirzh.html', date: '20 июня 2026', read: '15 мин' },
+        { tag: 'Безопасность', title: 'KYC на криптобиржах: что нужно знать в 2026', desc: 'Какие документы загружать, как пройти верификацию с первого раза, обход типичных ошибок.', url: '/articles/kyc-kriptobirzhi-2026.html', date: '18 июня 2026', read: '8 мин' },
+        { tag: 'Обзор', title: 'Bybit: подробный обзор 2026 — комиссии, бонусы, фишки', desc: 'Всё о Bybit для новичков и про: копитрейдинг, деривативы, Earn, скрытые возможности.', url: '/articles/bybit-obzor-2026.html', date: '15 июня 2026', read: '11 мин' }
+      ];
+      const filterMap = { 'Гайд':'guide', 'Обзор':'review', 'Сравнение':'compare', 'Заработок':'earn', 'Безопасность':'security', 'Стратегия':'review' };
+      const grid = document.getElementById('blogGrid');
+      function render(filter) {
+        const list = filter === 'all' ? blogArticles : blogArticles.filter(a => filterMap[a.tag] === filter);
+        grid.innerHTML = list.map(a => `
+          <a href="${a.url}" class="article-card">
+            <span class="article-card__tag">${a.tag}</span>
+            <h3>${a.title}</h3>
+            <p>${a.desc}</p>
+            <div class="article-card__meta">
+              <span>📅 ${a.date}</span>
+              <span>⏱ ${a.read}</span>
+            </div>
+          </a>
+        `).join('');
+      }
+      document.querySelectorAll('.filter-btn').forEach(b => {
+        b.addEventListener('click', () => {
+          document.querySelectorAll('.filter-btn').forEach(x => x.classList.remove('active'));
+          b.classList.add('active');
+          render(b.dataset.filter);
+        });
+      });
+      render('all');
+    })();
+  </script>
+</body>
+</html>

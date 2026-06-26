@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CryptoAffiliate.hub — Блог о криптовалюте</title>
+    <link>https://crypto-affiliate.vercel.app/articles/</link>
+    <description>Экспертные гайды, обзоры бирж и стратегии заработка на криптовалюте в 2026 году.</description>
+    <language>ru-RU</language>
+    <lastBuildDate>Thu, 26 Jun 2026 12:00:00 GMT</lastBuildDate>
+    <atom:link href="https://crypto-affiliate.vercel.app/articles/rss.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>Bybit vs OKX vs Binance: что выбрать в 2026</title>
+      <link>https://crypto-affiliate.vercel.app/articles/bybit-okx-binance-sravnenie-2026.html</link>
+      <description>Подробное сравнение топ-3 криптобирж: комиссии, ликвидность, фьючерсы, KYC, вывод в РФ.</description>
+      <pubDate>Wed, 24 Jun 2026 10:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://crypto-affiliate.vercel.app/articles/bybit-okx-binance-sravnenie-2026.html</guid>
+    </item>
+    <item>
+      <title>Как купить криптовалюту в России в 2026 году</title>
+      <link>https://crypto-affiliate.vercel.app/articles/kak-pokupat-kriptovalyutu-rossiya-2026.html</link>
+      <description>Пошаговая инструкция: от выбора биржи до безопасного хранения. P2P, СБП, OTC.</description>
+      <pubDate>Mon, 22 Jun 2026 10:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://crypto-affiliate.vercel.app/articles/kak-pokupat-kriptovalyutu-rossiya-2026.html</guid>
+    </item>
+    <item>
+      <title>Партнёрки криптобирж: реальный доход $5 000/мес</title>
+      <link>https://crypto-affiliate.vercel.app/articles/zarabotok-na-partnyorkah-kriptobirzh.html</link>
+      <description>Как построить воронку, какие биржи платят больше всего, SEO и Telegram-каналы.</description>
+      <pubDate>Sat, 20 Jun 2026 10:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://crypto-affiliate.vercel.app/articles/zarabotok-na-partnyorkah-kriptobirzh.html</guid>
+    </item>
+    <item>
+      <title>KYC на криптобиржах: что нужно знать в 2026</title>
+      <link>https://crypto-affiliate.vercel.app/articles/kyc-kriptobirzhi-2026.html</link>
+      <description>Какие документы загружать, как пройти верификацию с первого раза.</description>
+      <pubDate>Thu, 18 Jun 2026 10:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://crypto-affiliate.vercel.app/articles/kyc-kriptobirzhi-2026.html</guid>
+    </item>
+    <item>
+      <title>Bybit: подробный обзор 2026</title>
+      <link>https://crypto-affiliate.vercel.app/articles/bybit-obzor-2026.html</link>
+      <description>Всё о Bybit для новичков и про: копитрейдинг, деривативы, Earn, скрытые возможности.</description>
+      <pubDate>Mon, 15 Jun 2026 10:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://crypto-affiliate.vercel.app/articles/bybit-obzor-2026.html</guid>
+    </item>
+  </channel>
+</rss>
